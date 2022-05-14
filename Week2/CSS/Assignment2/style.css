@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    background-color: #0E94B9;
+    color: white;
+    font-size: 15px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* LEFT */
+.left {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 57%;
+    padding: 30px 20px;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.profile {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.cover {
+    background-color: #0D94B9;
+}
+
+.cover>img {
+    border-radius: 500px;
+    position: relative;
+    height: 100px;
+    top: 50px;
+    left: 40px;
+    border: 3px solid lightgray;
+    padding: 2px;
+}
+
+.location {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.location img {
+    height: 20px;
+}
+
+.settings {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.settings>img {
+    height: 15px;
+    vertical-align: middle;
+}
+
+.settings>a {
+    color: #144B81;
+    text-decoration: underline;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.white-space {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 3px solid lightgray;
+    border-top: none;
+}
+
+.white-space>h1 {
+    padding-left: 0px;
+}
+
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.section {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.label {
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 25px;
+}
+
+.section>.white-space {
+    padding: 15px;
+}
+
+.section>.white-space>h3 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+#grayh3 {
+    color: rgb(123, 123, 123);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* RIGHT */
+.right {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    padding: 30px 20px;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.right>.section {
+    width: 280px;
+}
+
+.right>.section > .white-space {
+    gap: 20px;
+}
+
+.icon-label {
+    display: flex;
+    background-color: #333333;
+    padding: 10px;
+    align-items: center;
+}
+
+.icon-label>span {
+    background-color: gray;
+    border-radius: 100%;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.icon-label>h3 {
+    padding-left: 10px;
+}
+
+.icon-label>span>h4 {
+    padding: 5px;
+}
+
+.icon-label>#connreq>h4 {
+    align-self: center;
+}
+
+#connreq {
+    border-radius: 20px;
+    width: 40px;
+    height: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.row-left>h2 {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 12px;
+}
+
+.row-left,
+.row-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    vertical-align: middle;
+}
+
+
+.row-left>img {
+    height: 50px;
+    border-radius: 100px;
+}
+
+.row-right>img {
+    height: 30px;
+}
+
+.view-more {
+    margin-top: -35px;
+    border: 3px solid lightgray;
+    border-top: none;
+    width: 280px;
+    padding: 10px;
+}
+
+.view-more > a {
+    color: #144B81;
+    text-decoration: underline;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: bold;
+}
