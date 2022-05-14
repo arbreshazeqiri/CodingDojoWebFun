@@ -203,11 +203,12 @@ h3 {
     padding-left: 10px;
 }
 
-.icon-label>span>h4 {
+.icon-label>span {
     padding: 5px;
+    font-weight: bold;
 }
 
-.icon-label>#connreq>h4 {
+.icon-label>#connreq{
     align-self: center;
 }
 
